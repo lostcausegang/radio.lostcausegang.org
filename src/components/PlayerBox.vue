@@ -1,12 +1,15 @@
 <template>
   <div class="playerBox">
     <div class="playPause">
-      <button v-on:click="playPause" class="playPauseButton" :disabled=loading v-bind:class = "(playing)?'playing':''">{{ buttonLabel }}</button>
+      <button v-on:click="playPause" class="playPauseButton" :disabled=loading v-bind:class="(playing)?'playing':''">{{
+          buttonLabel
+      }}</button>
     </div>
   </div>
 </template>
 <script lang="ts">
 import IcecastMetadataPlayer from "icecast-metadata-player";
+
 export default {
   name: 'player-box',
   data: function () {
@@ -18,8 +21,8 @@ export default {
         "https://radioadmin.lostcausegang.org/listen/lost_cause_radio/radio.mp3",
         {
           onStreamStart: () => {
-            this.buttonLabel = "Pause";
-            this.loading = false;
+            this.buttonLabel = "Pause" as any;
+            this.loading = false as any;
           },
         },
       ),
@@ -37,10 +40,6 @@ export default {
         this.buttonLabel = "Play";
         this.playing = false;
       }
-    },
-    setPause() {
-      console.log("pausing..");
-      // this.buttonLabel = "Pause";
     }
   }
 }
@@ -81,7 +80,8 @@ export default {
   flex: 0 0 160px;
 }
 
-.playing, .playPauseButton:disabled {
+.playing,
+.playPauseButton:disabled {
   background-color: var(--color-dark);
 }
 

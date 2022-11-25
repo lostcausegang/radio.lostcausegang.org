@@ -29,7 +29,7 @@ export default {
         }
     },
     created() {
-        let nowPlaying;
+        let nowPlaying: any;
         this.sub.on("message", (message: string, message_metadata: any) => {
             nowPlaying = JSON.parse(message);
             this.currentSongTitle = nowPlaying.now_playing.song.text;
