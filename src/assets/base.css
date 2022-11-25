@@ -34,6 +34,11 @@
   --color-text: var(--vt-c-text-light-1);
 
   --section-gap: 160px;
+
+  --borderRadius: 36px;
+  --color-snow: #FFFFFF;
+  --color-grass: #3dd28d;
+  --color-dark:  #161616;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -62,7 +67,10 @@
 body {
   min-height: 100vh;
   color: var(--color-text);
-  background: var(--color-background);
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://cdn.myportfolio.com/c6412743-e0de-4324-8de9-6a319bcf5a5c/69a0916e-e7cb-42eb-bd86-49635d40b67c_rwc_0x12x2322x3476x4096.jpg?h=0a5859e0a4cde6d66a990e66d70c0da0");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   transition: color 0.5s, background-color 0.5s;
   line-height: 1.6;
   font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
