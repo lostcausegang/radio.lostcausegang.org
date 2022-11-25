@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+import PlayerBox from '@/components/PlayerBox.vue'
+import NowPlaying from '@/components/NowPlaying.vue'
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <PlayerBox></PlayerBox>
+  <NowPlaying></NowPlaying>
 </template>
