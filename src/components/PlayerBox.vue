@@ -1,14 +1,17 @@
 <template>
   <div class="playerBox">
     <div class="playPause">
-      <button v-on:click="playPause" class="playPauseButton" :disabled=loading v-bind:class="(playing)?'playing':''">{{
+      <button v-on:click="playPause"
+class="playPauseButton"
+:disabled=loading
+v-bind:class="(playing)?'playing':''">{{
           buttonLabel
       }}</button>
     </div>
   </div>
 </template>
 <script lang="ts">
-import IcecastMetadataPlayer from "icecast-metadata-player";
+import IcecastMetadataPlayer from "icecast-metadata-player"
 
 export default {
   name: 'player-box',
@@ -21,8 +24,8 @@ export default {
         "https://radioadmin.lostcausegang.org/listen/lost_cause_radio/radio.mp3",
         {
           onStreamStart: () => {
-            this.buttonLabel = "Pause" as any;
-            this.loading = false as any;
+            this.buttonLabel = "Pause" as any
+            this.loading = false as any
           },
         },
       ),
@@ -31,14 +34,14 @@ export default {
   methods: {
     playPause() {
       if (this.playing == false) {
-        this.loading = true;
-        this.buttonLabel = "Loading...";
-        this.player.play();
-        this.playing = true;
+        this.loading = true
+        this.buttonLabel = "Loading..."
+        this.player.play()
+        this.playing = true
       } else {
-        this.player.stop();
-        this.buttonLabel = "Play";
-        this.playing = false;
+        this.player.stop()
+        this.buttonLabel = "Play"
+        this.playing = false
       }
     }
   }

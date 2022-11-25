@@ -2,10 +2,12 @@
     <div class="footer-menu">
         <ul>
             <li>v0.2.0-rc</li>
-            <li><RouterLink to="/about" target="_blank">About</RouterLink></li>
+            <li><RouterLink to="/about"
+target="_blank">About</RouterLink></li>
             <li><a href="https://ko-fi.com/S6S0FY8A2">Support us!</a></li>
         </ul>
-        <p>Provided and maintaned by <a href="http://lostcausegang.org" target="_blank">Lost Cause Gang</a></p>
+        <p>Provided and maintaned by <a href="http://lostcausegang.org"
+target="_blank">Lost Cause Gang</a></p>
     </div>
 </template>
 

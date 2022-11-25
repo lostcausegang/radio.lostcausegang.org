@@ -1,8 +1,9 @@
 <template>
     <div class="now-playing-container">
         <div class="now-playing">
-            <marquee-text :key="currentSongTitle" :duration=currentSongTitle.length>
-                {{ currentSongTitle}} <span class="songDivider">>></span>
+            <marquee-text :key="currentSongTitle"
+:duration=currentSongTitle.length>
+                {{ currentSongTitle }} <span class="songDivider">>></span>
             </marquee-text>
         </div>
         <div class="playlist">Live: {{ currentPlaylistTitle }}</div>
@@ -13,8 +14,8 @@
     </div>
 </template>
 <script lang="ts">
-import NchanSubscriber from 'nchan';
-import MarqueeText from 'vue-marquee-text-component';
+import NchanSubscriber from 'nchan'
+import MarqueeText from 'vue-marquee-text-component'
 export default {
     name: 'now-playing',
     components: {
@@ -29,14 +30,14 @@ export default {
         }
     },
     created() {
-        let nowPlaying: any;
-        this.sub.on("message", (message: string, message_metadata: any) => {
-            nowPlaying = JSON.parse(message);
-            this.currentSongTitle = nowPlaying.now_playing.song.text;
-            this.currentPlaylistTitle = nowPlaying.now_playing.playlist;
-            this.nextSongTitle = nowPlaying.playing_next.song.text;
-        });
-        this.sub.start();
+        let nowPlaying: any
+        this.sub.on("message", (message: string) => {
+            nowPlaying = JSON.parse(message)
+            this.currentSongTitle = nowPlaying.now_playing.song.text
+            this.currentPlaylistTitle = nowPlaying.now_playing.playlist
+            this.nextSongTitle = nowPlaying.playing_next.song.text
+        })
+        this.sub.start()
     },
 }
 </script>
