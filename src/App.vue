@@ -22,7 +22,7 @@ import FooterMenu from '@/components/FooterMenu.vue'
   text-align: center;
   color: #fff8e4;
   font-size: 2.1em;
-  font-family: auto-pro-small-caps, sans-serif;
+  font-family: 'Arial Black', Arial, sans-serif;
   font-weight: 900;
   font-style: normal;
   text-shadow: 1px 1px 4px #4f4732;
