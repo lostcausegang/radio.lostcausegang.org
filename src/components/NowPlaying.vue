@@ -1,15 +1,16 @@
 <template>
-    <div class="now-playing-container">
+    <div class="current-playlist">
+        <marquee-text :key="currentSongTitle" :repeat=10>{{ currentPlaylistTitle }}<span
+                class="separator">|</span></marquee-text>
+    </div>
+    <div class="playing-box">
         <div class="now-playing">
-            <marquee-text :key="currentSongTitle"
-:duration=currentSongTitle.length>
-                {{ currentSongTitle }} <span class="songDivider">>></span>
-            </marquee-text>
+            <h1>Now playing</h1>
+            <p>{{ currentSongTitle }}</p>
         </div>
-        <div class="playlist">Live: {{ currentPlaylistTitle }}</div>
-        <div class="queueTitle">Up Next</div>
-        <div class="metadataQueue">
-            {{ nextSongTitle }}
+        <div class="next-playing">
+            <h1>Up next</h1>
+            <p>{{ nextSongTitle }}</p>
         </div>
     </div>
 </template>
@@ -42,55 +43,51 @@ export default {
 }
 </script>
 <style>
-.now-playing-container {
+.current-playlist {
+    color: black;
+    font-size: 1.5em;
+    border-bottom: 1px solid black;
     width: 100%;
 }
 
-.now-playing {
-    text-align: center;
-    font-family: alarmClock, 'Courier New', Courier, monospace;
-    font-size: 3em;
-    margin: 1em auto 0 auto;
-    background-color: #000;
-    height: 2em;
-    line-height: 2em;
-    color: #77b791;
-    text-shadow: 5px 3px 7px rgba(119, 183, 145, 0.80);
-    box-shadow: 1px 1px 9px black;
+.playing-box {
+    padding: 3em 0 0 5em;
+}
+
+.now-playing p {
+    color: black;
+    font-family: Arial;
+    font-size: 5em;
     width: 50%;
-    border-radius: 10px;
+    line-height: 1em;
+    text-transform: capitalize;
 }
 
-.playlist {
-    text-align: center;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    margin-top: 2em;
-    color: #fff8e4;
-    text-shadow: 1px 1px 4px rgba(79, 71, 50, 0.75);
+.now-playing h1 {
+    color: black;
+    font-family: 'Arial Black';
+    margin-bottom: 0.5em;
+    font-size: 10em;
+    width: 50%;
+    line-height: 0.7em;
 }
 
-.queueTitle {
-    font-size: 1.7em;
-    font-family: Helvetica;
-    margin: 2em auto 1em auto;
-    font-weight: bold;
-    text-align: center;
-    color: #fff8e4;
-    text-shadow: 1px 1px 4px rgba(79, 71, 50, 0.75);
+.next-playing p {
+    color: black;
+    font-family: Arial;
+    width: 35%;
+    font-size: 2em;
+    text-transform: capitalize;
 }
 
-.metadataQueue {
-    text-align: center;
-    font-size: 1.25em;
-    margin-bottom: 2em;
-    font-weight: 600;
-    font-family: 'Courier New', Courier, monospace;
-    color: #fff8e4;
-    text-shadow: 1px 1px 4px rgba(79, 71, 50, 0.75);
+.next-playing h1 {
+    color: black;
+    font-family: 'Arial Black';
+    font-size: 4em;
+    margin-top: 0.1em;
 }
 
-.songDivider {
+.separator {
     padding-left: 0.5em;
     padding-right: 0.5em;
 }
