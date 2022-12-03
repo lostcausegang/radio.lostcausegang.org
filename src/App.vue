@@ -1,14 +1,12 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
 import FooterMenu from '@/components/FooterMenu.vue'
-
+import HeaderMenu from './components/HeaderMenu.vue';
 </script>
 
 <template>
   <header>
-    <div class="title">
-      <h1>Radio Lost Cause<span class="beta">β</span></h1>
-    </div>
+    <HeaderMenu></HeaderMenu>
   </header>
   <RouterView />
   <footer>
@@ -17,6 +15,7 @@ import FooterMenu from '@/components/FooterMenu.vue'
 </template>
 
 <style scoped>
+
 .title {
   padding-top: 5.5em;
   text-align: center;
@@ -28,9 +27,4 @@ import FooterMenu from '@/components/FooterMenu.vue'
   text-shadow: 1px 1px 4px #4f4732;
 }
 
-.beta {
-  font-size: 0.5em;
-  font-weight: 400;
-  vertical-align: sub;
-}
 </style>
