@@ -14,10 +14,10 @@
 
 <style>
 .about {
+  font-family: Arial, Helvetica, sans-serif;
   width: 35%;
-  margin: auto;
-  color: #fff8e4;
-  text-shadow: 1px 1px 4px #4f4732;
+  margin: 2em auto 0 auto;
+  color: black;
 }
 
 .about p {
@@ -25,6 +25,6 @@
 }
 
 .about a {
-  color: #fff8e4;
+  color: black;
 }
 </style>
