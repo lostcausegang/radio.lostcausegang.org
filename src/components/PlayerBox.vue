@@ -1,10 +1,7 @@
 <template>
   <div class="playerBox">
     <div class="playPause">
-      <button v-on:click="playPause"
-class="playPauseButton"
-:disabled=loading
-v-bind:class="(playing)?'playing':''">{{
+      <button v-on:click="playPause" class="playPauseButton" :disabled=loading v-bind:class="(playing)?'playing':''">{{
           buttonLabel
       }}</button>
     </div>
@@ -49,16 +46,14 @@ export default {
 </script>
 <style>
 .playerBox {
-  width: 100%;
-  text-align: center;
+  display: inline-block;
+  margin-left: 1em;
 }
 
 .playPauseButton {
-  margin-top: 1em;
   padding: 1em 3.5em;
   cursor: pointer;
   user-select: none;
-  transition: all 150ms linear;
   text-align: center;
   white-space: nowrap;
   text-decoration: none !important;
@@ -66,10 +61,8 @@ export default {
   text-transform: capitalize;
 
   color: var(--color-snow);
-  background-color: var(--color-grass);
+  background-color: black;
   border: 0 none;
-  border-radius: var(--borderRadius);
-
   font-size: 13px;
   font-weight: 500;
   line-height: 1.3;
@@ -90,7 +83,6 @@ export default {
 
 .playPauseButton:hover {
   transition: all 150ms linear;
-
   opacity: .85;
 }
 
