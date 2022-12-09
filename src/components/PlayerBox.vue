@@ -95,4 +95,10 @@ export default {
   outline: 1px dotted #959595;
   outline-offset: -4px;
 }
+
+@media only screen and (max-width: 375px) {
+  .playerBox {
+    margin: auto auto auto 2em;
+  }
+}
 </style>

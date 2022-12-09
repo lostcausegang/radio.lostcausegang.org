@@ -71,8 +71,14 @@ export default {
 }
 
 .logo {
-    width: 13%;
+    width: 15em;
     margin-left: 1em;
     display: inline-block;
+}
+
+@media only screen and (max-width: 375px) {
+  .logo {
+    width: 12em;
+  }
 }
 </style>

@@ -92,42 +92,40 @@ export default {
     padding-right: 0.5em;
 }
 
-/* Move it (define the animation) */
-@-moz-keyframes horizontally {
-    0% {
-        -moz-transform: translateX(50%);
+@media only screen and (max-width: 810px) {
+
+    .playing-box {
+        padding: 2em;
+        width: 100%;
     }
 
-    100% {
-        -moz-transform: translateX(-50%);
-    }
-}
-
-@-webkit-keyframes horizontally {
-    0% {
-        -webkit-transform: translateX(50%);
-    }
-
-    100% {
-        -webkit-transform: translateX(-50%);
+    .now-playing p,
+    .next-playing p {
+        width: 90%;
     }
 }
 
-@keyframes horizontally {
-    0% {
-        -moz-transform: translateX(50%);
-        /* Browser bug fix */
-        -webkit-transform: translateX(50%);
-        /* Browser bug fix */
-        transform: translateX(50%);
+@media only screen and (max-width: 670px) {
+    .now-playing h1 {
+        font-size: 6em;
     }
 
-    100% {
-        -moz-transform: translateX(-50%);
-        /* Browser bug fix */
-        -webkit-transform: translateX(-50%);
-        /* Browser bug fix */
-        transform: translateX(-50%);
+    .next-playing h1 {
+        font-size: 3em;
+    }
+}
+
+@media only screen and (max-width: 412px) {
+    .now-playing h1 {
+        font-size: 4.5em;
+    }
+
+    .now-playing p {
+        font-size: 3em;
+    }
+
+    .next-playing h1 {
+        font-size: 2em;
     }
 }
 </style>
