@@ -8,14 +8,15 @@ import HeaderMenu from './components/HeaderMenu.vue';
   <header>
     <HeaderMenu></HeaderMenu>
   </header>
-  <RouterView />
+  <section>
+    <RouterView />
+  </section>
   <footer>
     <FooterMenu></FooterMenu>
   </footer>
 </template>
 
 <style scoped>
-
 .title {
   padding-top: 5.5em;
   text-align: center;
@@ -26,5 +27,4 @@ import HeaderMenu from './components/HeaderMenu.vue';
   font-style: normal;
   text-shadow: 1px 1px 4px #4f4732;
 }
-
 </style>

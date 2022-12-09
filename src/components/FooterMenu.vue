@@ -15,7 +15,7 @@
 .footer-menu {
     text-align: center;
     font-weight: 400;
-    position: fixed;
+    /* position: fixed; */
     bottom: 1em;
     width: 100%;
 }
