@@ -1,7 +1,7 @@
 <template>
     <div class="footer-menu">
         <ul>
-            <li>v0.3.0</li>
+            <li>v0.3.1</li>
             <li>
                 <RouterLink to="/about">About</RouterLink>
             </li>

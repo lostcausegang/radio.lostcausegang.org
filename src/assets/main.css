@@ -1,9 +1,13 @@
 @import './base.css';
 
-main {
+/* main {
   align-items: center;
   display: flex;
   justify-content: center;
+} */
+
+#app {
+  height: 100%;
 }
 
 .about {
