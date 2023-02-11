@@ -19,8 +19,13 @@ const router = createRouter({
     },
     {
       path: '/privacy',
-      name: 'prvacy',
+      name: 'privacy',
       component: () => import('../views/PrivacyView.vue')
+    },
+    {
+      path: '/how-to-listen',
+      name: 'listen',
+      component: () => import('../views/ListenView.vue')
     }
   ]
 })
