@@ -5,9 +5,17 @@
             <li>
                 <RouterLink to="/about">About</RouterLink>
             </li>
-            <li><a href="https://ko-fi.com/S6S0FY8A2">Support us!</a></li>
+            <li>
+                <RouterLink to="/privacy">Privacy Policy</RouterLink>
+            </li>
+            <li>
+                <a href="https://code.alxwnth.com/lostcausegang/radio.lostcausegang.org">Source code</a>
+            </li>
+            <li>
+                <a href="https://ko-fi.com/S6S0FY8A2">Support us</a>
+            </li>
         </ul>
-        <p>Provided and maintaned by <a href="http://lostcausegang.org" target="_blank">Lost Cause Gang</a></p>
+        <p>Provided and maintained by <a href="http://lostcausegang.org" target="_blank">Lost Cause Gang</a></p>
     </div>
 </template>
 

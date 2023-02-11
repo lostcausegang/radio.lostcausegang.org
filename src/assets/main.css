@@ -1,13 +1,22 @@
 @import './base.css';
-@import url('https://use.typekit.net/mph4pup.css');
-
-@font-face {
-  font-family: alarmClock;
-  src: url(./alarm_clock.ttf);
-}
 
 main {
   align-items: center;
   display: flex;
   justify-content: center;
+}
+
+.about {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 35%;
+  margin: 2em auto 0 auto;
+  color: black;
+}
+
+.about p {
+  margin-bottom: 1.1em;
+}
+
+.about a {
+  color: black;
 }

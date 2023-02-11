@@ -11,20 +11,3 @@
     <p>Thanks and enjoy the music!</p>
   </div>
 </template>
-
-<style>
-.about {
-  font-family: Arial, Helvetica, sans-serif;
-  width: 35%;
-  margin: 2em auto 0 auto;
-  color: black;
-}
-
-.about p {
-  margin-bottom: 1.1em;
-}
-
-.about a {
-  color: black;
-}
-</style>
