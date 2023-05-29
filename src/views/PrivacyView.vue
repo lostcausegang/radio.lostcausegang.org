@@ -8,14 +8,14 @@
         <h2>Radio Backend</h2>
         <p>This is what powers the audio stream you listen to. We use <a href="https://www.azuracast.com/"
                 target="_blank">AzuraCast</a> which is
-            an open-source self-hosted solution for web radio stations. Our instance of AzuraCast is configured to not
-            collect any listener analytics. Yes, we don't even know how many listeners we have, not to say about
-            location or listening time.</p>
+            an open-source self-hosted solution for web radio stations. Our instance of AzuraCast is configured to collect
+            only aggregate statistics. Aggregate listener statistics are used to show station reports across the system. We
+            don't share these with anyone and only staff with admin access to AzuraCast dashboard can see the data. Having
+            aggregate statistics means we can know what songs perform better and fine-tune our choice of music to listeners'
+            preferences.</p>
         <h2>Then how do you make money? Where's the catch?</h2>
-        <p>We don't. And there's no catch. Radio Lost Cause acts as a public service and is financed by Lost Cause Gang
-            directly. Its purpose is to share music from independent artists, not to make money. Donations are
-            definitely welcome since they allow us to grow and cover infrastructure costs but in on way they are
-            required.</p>
+        <p>We don't. And there's no catch. Radio Lost Cause is a free public service and is financed by Lost Cause Gang
+            directly. Its purpose is to share music from independent artists, not to make money.</p>
         <br>
     </div>
 </template>

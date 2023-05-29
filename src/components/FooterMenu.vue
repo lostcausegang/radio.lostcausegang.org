@@ -12,10 +12,7 @@
                 <RouterLink to="/privacy">Privacy Policy</RouterLink>
             </li>
             <li>
-                <a href="https://code.alxwnth.com/lostcausegang/radio.lostcausegang.org" target="_blank">Source code</a>
-            </li>
-            <li>
-                <a href="https://ko-fi.com/S6S0FY8A2" target="_blank">Support us</a>
+                <a href="https://github.com/lostcausegang/radio.lostcausegang.org" target="_blank">Source code</a>
             </li>
         </ul>
         <p>Provided and maintained by <a href="http://lostcausegang.org" target="_blank">Lost Cause Gang</a></p>
